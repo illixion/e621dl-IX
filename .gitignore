@@ -1,0 +1,13 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Repo
+downloads/
+config.yaml
+
+# Remove before committing
+old/
