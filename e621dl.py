@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""e621dl — download e621 posts matching configured searches into a Drop Box folder.
+"""e621dl-IX — download e621 posts matching configured searches into a Drop Box folder.
 
 Uses the v2 post API (v2=true; default mode=basic returns tags as a flat array).
 Every downloaded post ID is recorded in database.txt, so a file deleted from the
@@ -17,8 +17,8 @@ from fnmatch import fnmatch
 
 import requests
 
-VERSION = '5.1.0'
-USER_AGENT = f'e621dl-M/{VERSION} (+Manual on e621)'
+VERSION = '5.2.0'
+USER_AGENT = f'e621dl-IX/{VERSION} (+Manual on e621)'
 POSTS_URL = 'https://e621.net/posts.json'
 POOL_URL = 'https://e621.net/pools'
 POOL_SUBDIR = 'pools'
@@ -320,7 +320,7 @@ def run_pool(session, pool_id, blacklist, pool_directory):
 
 def main():
     logging.basicConfig(level=logging.INFO, format='%(name)-7s %(levelname)-8s %(message)s')
-    log.info('Running e621dl %s', VERSION)
+    log.info('Running e621dl-IX %s', VERSION)
 
     config = load_config()
     directory, pool_directory, blacklist, searches, pools = parse_searches(config)

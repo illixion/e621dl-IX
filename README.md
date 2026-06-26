@@ -1,4 +1,4 @@
-# e621dl
+# e621dl-IX
 
 A small automated downloader for [e621](https://e621.net). It runs the searches
 defined in `config.ini` and saves every matching post into a destination
